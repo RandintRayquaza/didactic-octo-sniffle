@@ -3,7 +3,9 @@ class Student:
     self.name = name
 
   def show(self):
-    print(f"name is {self.name}")
+    print(f'''
+          name is {self.name}
+''')
 
 
 class school(Student):
@@ -17,10 +19,10 @@ class school(Student):
   def show(self):
     super().show()
     print(f'''
-    grade is {self.grade} 
-    section is {self.section}
-    marks is {self.marks}
-    ''')
+        grade is {self.grade} 
+        section is {self.section}
+        marks are {self.marks}
+        ''')
    
 class collage(school):
     def __init__(self,name,grade,section,marks,jee_marks,c_name ,c_location):
@@ -31,8 +33,8 @@ class collage(school):
 
     def show(self):
         super().show()
-        print(f'''
-        JEE marks is {self.jee_marks}
+        print(f''' 
+        JEE marks are {self.jee_marks}
         College name is {self.c_name}
         College location is {self.c_location}
         ''')

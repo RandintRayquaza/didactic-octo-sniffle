@@ -1,14 +1,3 @@
-#creaate a resume builder using multilevel inheritance 
-#craeet a class resuem 10th to store personla details in 10Th academic details
-#create a class resume 12th that inherits resume 10th to store 12th academic details
-#create a class resume collage that inherits resume 12th to store collage details  like degree acadmic
-
-#use construcotr to initilsie all data 
-#use methods to display resume at each level of inheritance
-
-#create objcets for a 12th pass  studnet and a degree studnet and display their resume details
-
-
 class Resume10th:
     def __init__(self,name,age, marks_10th , school_name ,board):
         self.name = name

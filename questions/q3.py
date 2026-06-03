@@ -9,7 +9,7 @@ class Subtraction:
         print(a-b)
 
 class Multiplication:
-    def mul(self, a, b):
+    def multi(self, a, b):
         print( a * b)
 
 class Calculator(Addition, Subtraction, Multiplication):
@@ -18,4 +18,5 @@ class Calculator(Addition, Subtraction, Multiplication):
 calc = Calculator()
 calc.add(10, 5)
 calc.sub(10, 5)
-calc.mul(10, 5)
+calc.multi(10, 5)
+

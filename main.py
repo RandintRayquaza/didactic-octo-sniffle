@@ -22,4 +22,24 @@ class school(Student):
     marks is {self.marks}
     ''')
    
+class collage(school):
+    def __init__(self,name,grade,section,marks,jee_marks,c_name ,c_location):
+      super().__init__(name,grade,section,marks)
+      self.jee_marks = jee_marks
+      self.c_name = c_name
+      self.c_location = c_location
 
+    def show(self):
+        super().show()
+        print(f'''
+        JEE marks is {self.jee_marks}
+        College name is {self.c_name}
+        College location is {self.c_location}
+        ''')
+
+s1 = collage("Aryan", "12th", "A", 85, 250, "CGC U", " Mohali")
+s1.show()
+s2 = school("Rahul", "10th", "B", 90)
+s2.show()
+s3 = Student("Ankit")
+s3.show()

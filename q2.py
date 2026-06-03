@@ -33,7 +33,7 @@ class savings_bankAccount(Bank_account):
       print(f"Savings Account - your balance is {self.bal}")
 
 
-s1= savings_bankAccount('Aryan',2374862385,34878873586438)
+s1= savings_bankAccount('Aryan',30000,34878873586438)
 s1.widthraw(5000 )
 s1.show_balance()
 

@@ -2,6 +2,8 @@
 def demo():
     print("Polymorphism")
 
+var = demo
+
 def demo(a,b):
     return a+b
 mid = demo
@@ -12,3 +14,5 @@ def demo(a,b,c):
 print(demo(2,3,4))
 
 print(mid(2,3))
+
+var()

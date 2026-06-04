@@ -20,22 +20,30 @@ class Devloper:
 
         print(self._salary)
 
-c1= Devloper('Aryan',10000)
-print(c1._salary)
+d1= Devloper('Aryan',10000)
+print(d1._salary)
 
 
 
 #Real private specfire
 
-class employee:
-    def __init__(self,name,salary):
-        self.name = name 
-        self.__salary  = salary
+# class employee:
+#     def __init__(self,name,salary):
+#         self.name = name 
+#         self.__salary  = salary
 
-        print(self.__salary)
+#         print(self.__salary)
 
-d1= employee('Aryan',10000)
-print(d1.self.__salary)
+# e1= employee('Aryan',10000)
+# print(e1.self.__salary)
 
 
+class Bank:
+    def __init__(self, bal, accno):
+        self.__bal = bal
+        self.__accno = accno
 
+
+c1 = Bank(34000, 37848)
+print(c1._Bank__bal)
+    

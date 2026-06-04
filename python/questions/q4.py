@@ -9,3 +9,16 @@ s1 = Studnets('Aryan')
 print(s1.name)
 
 
+#protected access 
+
+class Devloper:
+    def __init__(self,name,salary):
+        self.name = name 
+        self._salary  = salary
+      
+        
+
+        print(self._salary)
+
+c1= Devloper('Aryan',10000)
+print(c1._salary)

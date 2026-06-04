@@ -22,3 +22,21 @@ class Devloper:
 
 c1= Devloper('Aryan',10000)
 print(c1._salary)
+
+
+
+#Real private specfire
+
+class employee:
+    def __init__(self,name,salary):
+        self.name = name 
+        self.__salary  = salary
+    
+    def get_salary(self):
+        return self.__salary
+
+d1= employee('Aryan',10000)
+print(d1.get_salary())
+
+
+
